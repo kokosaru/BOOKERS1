@@ -11,9 +11,9 @@
 		<tr>
 			<td><%= book.book_title %></td>
 			<td><%= book.book_body %></td>
-	<td><%= link_to "Show" ,book_path(book.id) %></td>
-	<td><%= link_to "Edit" ,edit_book_path(book.id) %></td>
-	<td><%= link_to "Destroy", book_path(book.id), method: :delete, "data-cofirm" => "Are you sure?" %></td>
+	<td><%= link_to "Show" ,book_path(book.id),class: "show_#{1}"%></td>
+	<td><%= link_to "Edit" ,edit_book_path(book.id),class: "edit_#{1}" %></td>
+	<td><%= link_to "Destroy", book_path(book.id), method: :delete,class: "destroy_#{1}"%></td>
 		</tr>
 		</body>
 <% end %>
